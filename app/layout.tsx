@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import "easymde/dist/easymde.min.css";
-import { SanityLive } from "@/sanity/lib/live";
+// import { SanityLive } from "@/sanity/lib/live";
 
 const workSans = localFont({
   src: [
@@ -66,7 +66,7 @@ export default function RootLayout({
       <body className={`${workSans.variable} antialiased font-work-sans`}>
         <Navbar />
         {children}
-        <SanityLive />
+        {/* <SanityLive /> */}
       </body>
     </html>
   );
